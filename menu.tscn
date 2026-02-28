@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://c3hd5br0x1yet"]
+
+[ext_resource type="Script" uid="uid://bpdtyg3hr5hfo" path="res://menu.gd" id="1_4hy44"]
+[ext_resource type="AudioStream" uid="uid://d17h8yok4dj6w" path="res://BGM/TitleScreenLoop.mp3str" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://cr1a1bhgwps3d" path="res://texture/blackbg.png" id="2_mae5d"]
+[ext_resource type="FontFile" uid="uid://1mcvfbusfdxo" path="res://font/Mario64.ttf" id="3_4hy44"]
+[ext_resource type="AudioStream" uid="uid://74273yhbp0ih" path="res://sfx/sm64_mario_lets_go.wav" id="5_ytr4m"]
+
+[sub_resource type="Animation" id="Animation_mae5d"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(212, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(231, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="Animation" id="Animation_4hy44"]
+resource_name = "button"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Button:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2),
+"points": PackedFloat32Array(212, -0.25, 0, 0.25, 0, 212, -0.06666667, 0, 0.016666666, 0, 212, -0.083333336, 0, 0.083333336, 0, 212, -0.016666671, 0, 0.06666666, 0, 212, -0.16666667, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.4, 0.5, 0.6, 1)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Button:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 2, 2, 2, 2),
+"points": PackedFloat32Array(231, -0.25, 0, 0.25, 0, 221.463, -0.06666667, 1.4666667, 0.016666666, -0.36666664, 220, -0.083333336, 0, 0.083333336, 0, 221, -0.016666671, -0.36666676, 0.06666666, 1.4666666, 231, -0.16666667, 0, 0, 0),
+"times": PackedFloat32Array(0, 0.4, 0.5, 0.6, 1)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ytr4m"]
+_data = {
+&"RESET": SubResource("Animation_mae5d"),
+&"button": SubResource("Animation_4hy44")
+}
+
+[node name="Menu" type="Node2D" unique_id=1663043664 node_paths=PackedStringArray("button", "audio_player")]
+script = ExtResource("1_4hy44")
+button = NodePath("Button")
+audio_player = NodePath("AudioStreamPlayer2D2")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=140784595]
+stream = ExtResource("1_lti8b")
+volume_db = 3.925
+autoplay = true
+playback_type = 1
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=794908548]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1697625316]
+libraries/ = SubResource("AnimationLibrary_ytr4m")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1906329983]
+visible = false
+z_index = -1
+scale = Vector2(5000000, 5000000)
+texture = ExtResource("2_mae5d")
+
+[node name="Button" type="Button" parent="." unique_id=527896220]
+offset_left = 212.0
+offset_top = 231.0
+offset_right = 775.0
+offset_bottom = 439.00024
+theme_type_variation = &"FlatButton"
+theme_override_fonts/font = ExtResource("3_4hy44")
+theme_override_font_sizes/font_size = 64
+text = "Start Game"
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=1107307027]
+stream = ExtResource("5_ytr4m")

@@ -1,0 +1,285 @@
+[gd_scene format=3 uid="uid://dju133hrpsr35"]
+
+[ext_resource type="Texture2D" uid="uid://bthyru7y8khid" path="res://texture/output2.png" id="1_iyh20"]
+[ext_resource type="Script" uid="uid://fmh680fp6b7h" path="res://logo.gd" id="1_y22jp"]
+[ext_resource type="Texture2D" uid="uid://4q335xxs2p" path="res://icon.svg" id="2_hgdat"]
+[ext_resource type="Texture2D" uid="uid://cdvpaqys5244i" path="res://texture/construction_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz241.svg" id="3_aicgo"]
+[ext_resource type="Texture2D" uid="uid://b8osv23h5mcd3" path="res://texture/robot_godot_PROPER.png" id="4_m1ma4"]
+[ext_resource type="FontFile" uid="uid://1mcvfbusfdxo" path="res://font/Mario64.ttf" id="5_y642d"]
+[ext_resource type="AudioStream" uid="uid://cgkyhmfycvxfr" path="res://sfx/sm64_coin.wav" id="6_dj7nl"]
+[ext_resource type="AudioStream" uid="uid://bqnf58n0xkiab" path="res://sfx/sm64_mario_its_me.wav" id="7_y22jp"]
+[ext_resource type="AudioStream" uid="uid://2sg6be0fdn" path="res://sfx/godot.mp3" id="9_7ojkr"]
+[ext_resource type="Texture2D" uid="uid://cr1a1bhgwps3d" path="res://texture/blackbg.png" id="10_km3ge"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iicoe"]
+font = ExtResource("5_y642d")
+font_size = 48
+font_color = Color(1, 1, 1, 0)
+
+[sub_resource type="Animation" id="Animation_m1ma4"]
+length = 2.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 2.4333334, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.001, 0.001), Vector2(0.044848025, 0.029938385), Vector2(0.030536208, 0.029938385), Vector2(0.030536208, 0.029938385), Vector2(0.0011858144, 0.001198615)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D2:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 2.4333334, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.14062543, 0.039062314), Vector2(6.306757, 1.1694627), Vector2(4.2941566, 1.1694627), Vector2(4.2941566, 1.1694627), Vector2(0.1667552, 0.046820655)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D3:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 2.4333334, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.7154947, 0.17675887), Vector2(32.088432, 5.291876), Vector2(21.848433, 5.291876), Vector2(21.848433, 5.291876), Vector2(0.8484421, 0.21186571)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D4:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 2.4333334, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.002, 0.002), Vector2(0.08969605, 0.059876803), Vector2(0.061072417, 0.059876803), Vector2(0.061072417, 0.059876803), Vector2(0.0023716288, 0.0023972294)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D4:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 2.4333334, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(562.00006, 324), Vector2(142, 318), Vector2(273, 320), Vector2(273, 320), Vector2(560, 323.99997)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Sprite2D3:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.3, 2.4333334, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(570.9551, 326.78363), Vector2(571.0465, 370.22452), Vector2(571.0465, 370.22452), Vector2(571.0864, 327.37543)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Sprite2D2:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.3, 2.4333334, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(570.541, 326.40472), Vector2(570.63245, 369.8456), Vector2(570.63245, 369.8456), Vector2(570.67236, 326.99652)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Sprite2D:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(1.5000001, 2.4333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(571.541, 324.90472), Vector2(571.541, 324.90472)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Label:label_settings")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.6, 2.4333334, 2.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [SubResource("LabelSettings_iicoe"), SubResource("LabelSettings_iicoe"), SubResource("LabelSettings_iicoe"), SubResource("LabelSettings_iicoe"), SubResource("LabelSettings_iicoe")]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Label:label_settings:font_color")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.8, 2.4, 2.6333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("AudioStreamPlayer2D:playing")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("AudioStreamPlayer2D2:playing")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0, 0.56666666, 1.4000001),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [false, true, false]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("AudioStreamPlayer2D3:playing")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0, 1.2666667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="Animation" id="Animation_aicgo"]
+resource_name = "logo"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 1.3000001, 1.5000001),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.001, 0.001), Vector2(0.048814792, 0.06254402), Vector2(0.039946765, 0.028737923), Vector2(0.045269888, 0.04765288)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D2:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 1.3000001, 1.5000001),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.14062543, 0.039062314), Vector2(6.8646007, 2.4431093), Vector2(5.617531, 1.1225675), Vector2(6.3660965, 1.8614278)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D3:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1, 1.3000001, 1.5000001),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0.7154947, 0.17675887), Vector2(34.92672, 11.055188), Vector2(28.581694, 5.079673), Vector2(32.390358, 8.423053)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_m1ma4"]
+_data = {
+&"RESET": SubResource("Animation_m1ma4"),
+&"logo": SubResource("Animation_aicgo")
+}
+
+[node name="Node2D" type="Node2D" unique_id=1928959537 node_paths=PackedStringArray("animation_player")]
+script = ExtResource("1_y22jp")
+animation_player = NodePath("AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=899076701]
+deterministic = true
+libraries/ = SubResource("AnimationLibrary_m1ma4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=224118938]
+position = Vector2(571.541, 324.90472)
+scale = Vector2(0.001, 0.001)
+texture = ExtResource("1_iyh20")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1813351995]
+position = Vector2(570.541, 326.40472)
+scale = Vector2(0.14062543, 0.039062314)
+texture = ExtResource("2_hgdat")
+
+[node name="Sprite2D3" type="Sprite2D" parent="." unique_id=151854295]
+position = Vector2(570.9551, 326.78363)
+scale = Vector2(0.7154947, 0.17675887)
+texture = ExtResource("3_aicgo")
+
+[node name="Sprite2D4" type="Sprite2D" parent="." unique_id=2096330856]
+position = Vector2(562.00006, 324)
+rotation = 0.21642083
+scale = Vector2(0.002, 0.002)
+texture = ExtResource("4_m1ma4")
+
+[node name="Label" type="Label" parent="." unique_id=933135186]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 452.0
+offset_top = 535.0
+offset_right = 720.0
+offset_bottom = 591.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "2026 enessmr"
+label_settings = SubResource("LabelSettings_iicoe")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=651272511]
+stream = ExtResource("6_dj7nl")
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="." unique_id=2068571698]
+stream = ExtResource("7_y22jp")
+panning_strength = 3.0
+
+[node name="AudioStreamPlayer2D3" type="AudioStreamPlayer2D" parent="." unique_id=2090704274]
+stream = ExtResource("9_7ojkr")
+
+[node name="Sprite2D5" type="Sprite2D" parent="." unique_id=633188835]
+z_index = -1
+scale = Vector2(14749909, 881457.06)
+texture = ExtResource("10_km3ge")

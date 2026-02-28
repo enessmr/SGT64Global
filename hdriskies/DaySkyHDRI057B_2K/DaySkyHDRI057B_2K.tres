@@ -1,0 +1,10 @@
+[gd_resource type="Sky" format=3 uid="uid://dbocxuohwn2bj"]
+
+[ext_resource type="Texture2D" uid="uid://62gd728481j6" path="res://hdriskies/DaySkyHDRI057B_2K/DaySkyHDRI057B_2K_HDR.exr" id="acg_t5lshg3r"]
+
+[sub_resource type="PanoramaSkyMaterial" id="acg_nq2gf6ce"]
+panorama = ExtResource("acg_t5lshg3r")
+
+[resource]
+sky_material = SubResource("acg_nq2gf6ce")
+radiance_size = 0

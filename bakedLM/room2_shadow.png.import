@@ -1,0 +1,30 @@
+[remap]
+
+importer="2d_array_texture"
+type="CompressedTexture2DArray"
+uid="uid://bl7ev6gj2yja3"
+path.s3tc="res://.godot/imported/room2_shadow.png-6008a8f8445476b7a22f45c51047ae43.s3tc.ctexarray"
+path.etc2="res://.godot/imported/room2_shadow.png-6008a8f8445476b7a22f45c51047ae43.etc2.ctexarray"
+metadata={
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+
+[deps]
+
+source_file="res://bakedLM/room2_shadow.png"
+dest_files=["res://.godot/imported/room2_shadow.png-6008a8f8445476b7a22f45c51047ae43.s3tc.ctexarray", "res://.godot/imported/room2_shadow.png-6008a8f8445476b7a22f45c51047ae43.etc2.ctexarray"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/channel_pack=1
+mipmaps/generate=false
+mipmaps/limit=-1
+slices/horizontal=1
+slices/vertical=6

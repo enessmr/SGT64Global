@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://mgp02mkor0at"]
+
+[ext_resource type="Script" uid="uid://bbnl67ndrawxx" path="res://mp.gd" id="1_wc5p8"]
+[ext_resource type="PackedScene" uid="uid://cfa6fwt35h08v" path="res://home.tscn" id="2_a0tk4"]
+[ext_resource type="Shader" uid="uid://5bbix40lh7d6" path="res://shader/volCloud.gdshader" id="3_r3fl7"]
+[ext_resource type="Texture2D" uid="uid://bxhk0hghfgrdn" path="res://shader/texture/cloudNoise.png" id="4_jka67"]
+[ext_resource type="PackedScene" uid="uid://i8xyfld5pcu1" path="res://hud.tscn" id="6_i5arm"]
+
+[sub_resource type="Environment" id="Environment_r3fl7"]
+background_mode = 2
+ambient_light_source = 3
+ambient_light_color = Color(0.89059, 0.89059, 0.8905901, 1)
+reflected_light_source = 2
+fog_mode = 1
+fog_light_color = Color(0.45490196, 0.4862745, 0.5372549, 1)
+fog_density = 1.0
+fog_aerial_perspective = 1.0
+fog_sky_affect = 0.0
+fog_depth_curve = 1.8025014
+fog_depth_begin = 0.0
+fog_depth_end = 1855.7
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i5arm"]
+render_priority = 0
+shader = ExtResource("3_r3fl7")
+shader_parameter/cloudNoise = ExtResource("4_jka67")
+shader_parameter/time_scale = 1.0
+shader_parameter/CLOUD_THICKNESS = 12.0
+shader_parameter/CLOUD_DETAIL = 10.0
+shader_parameter/CLOUD_DENSITY = 4.0
+shader_parameter/CLOUD_AMOUNT = 10.0
+shader_parameter/CLOUD_STRETCH = 500.0
+shader_parameter/CLOUD_SPEED = 5.194000246715
+shader_parameter/CLOUD_HEIGHT = 192.0
+shader_parameter/CLOUD_SCALE = 1.0
+shader_parameter/CLOUD_OPACITY = 1.0
+shader_parameter/CLOUD_BRIGHTNESS = 1.0
+shader_parameter/rain_strength = 0.0
+shader_parameter/sun_coverage = 0.0
+shader_parameter/CLOUD_BASE_TYPE = 2
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_wc5p8"]
+material = SubResource("ShaderMaterial_i5arm")
+subdivide_width = 5
+subdivide_depth = 5
+
+[node name="main" type="Node" unique_id=2115029287 node_paths=PackedStringArray("main_menu", "hud", "address_entry", "nickname", "world", "players_spawn")]
+script = ExtResource("1_wc5p8")
+names = Array[String](["john", "jane"])
+main_menu = NodePath("Menu")
+hud = NodePath("HUD")
+address_entry = NodePath("Menu/PanelContainer/MarginContainer/VBoxContainer/Adress")
+nickname = NodePath("Menu/PanelContainer/MarginContainer/VBoxContainer/Name")
+world = NodePath("World")
+players_spawn = NodePath("World/Players")
+
+[node name="Menu" type="CanvasLayer" parent="." unique_id=1686886008]
+
+[node name="PanelContainer" type="PanelContainer" parent="Menu" unique_id=1459657313]
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -172.0
+offset_right = 311.0
+offset_bottom = 172.0
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Menu/PanelContainer" unique_id=1768213861]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Menu/PanelContainer/MarginContainer" unique_id=54203946]
+layout_mode = 2
+
+[node name="Host" type="Button" parent="Menu/PanelContainer/MarginContainer/VBoxContainer" unique_id=217639531]
+layout_mode = 2
+text = "Host"
+
+[node name="Join" type="Button" parent="Menu/PanelContainer/MarginContainer/VBoxContainer" unique_id=2070993499]
+layout_mode = 2
+text = "Join"
+
+[node name="Adress" type="LineEdit" parent="Menu/PanelContainer/MarginContainer/VBoxContainer" unique_id=788167363]
+unique_name_in_owner = true
+layout_mode = 2
+text = "localhost"
+placeholder_text = "Adress"
+emoji_menu_enabled = false
+clear_button_enabled = true
+
+[node name="HSeparator" type="HSeparator" parent="Menu/PanelContainer/MarginContainer/VBoxContainer" unique_id=1685645602]
+layout_mode = 2
+
+[node name="Name" type="LineEdit" parent="Menu/PanelContainer/MarginContainer/VBoxContainer" unique_id=334187336]
+unique_name_in_owner = true
+layout_mode = 2
+placeholder_text = "Name"
+
+[node name="Players" type="MultiplayerSpawner" parent="." unique_id=903713903]
+_spawnable_scenes = PackedStringArray("uid://b2gxuv7f7py1v")
+spawn_path = NodePath("../World/Players")
+
+[node name="Objects" type="MultiplayerSpawner" parent="." unique_id=547364232]
+spawn_path = NodePath("../World/Level")
+
+[node name="HUD" parent="." unique_id=558538733 instance=ExtResource("6_i5arm")]
+visible = false
+
+[node name="World" type="Node3D" parent="." unique_id=1298242243]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="World" unique_id=529210829]
+environment = SubResource("Environment_r3fl7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="World" unique_id=1051603549]
+transform = Transform3D(2000, 0, 0, 0, -1, 0.00030199162, 0, -1.509958e-07, -2000, 0, 550.4435, 0)
+mesh = SubResource("PlaneMesh_wc5p8")
+
+[node name="Players" type="Node3D" parent="World" unique_id=705020197]
+
+[node name="Level" type="Node3D" parent="World" unique_id=1175102653]
+
+[node name="Home" parent="World/Level" unique_id=1410796952 instance=ExtResource("2_a0tk4")]
+unique_name_in_owner = true
+
+[node name="Overviev" type="Camera3D" parent="World" unique_id=1239198934]
+transform = Transform3D(1, 0, 0, 0, 0.9487686, 0.3159717, 0, -0.3159717, 0.9487686, 3.5507152, 7.457046, 6.2460203)
+
+[connection signal="pressed" from="Menu/PanelContainer/MarginContainer/VBoxContainer/Host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="Menu/PanelContainer/MarginContainer/VBoxContainer/Join" to="." method="_on_join_pressed"]
