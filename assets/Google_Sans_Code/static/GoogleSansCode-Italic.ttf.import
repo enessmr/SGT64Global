@@ -1,36 +1,3 @@
-[remap]
-
-importer="font_data_dynamic"
-type="FontFile"
-uid="uid://bn614xcm843hg"
-path="res://.godot/imported/GoogleSansCode-Italic.ttf-3b2534cd9a211f2ad1e178f5d2414850.fontdata"
-
-[deps]
-
-source_file="res://assets/Google_Sans_Code/static/GoogleSansCode-Italic.ttf"
-dest_files=["res://.godot/imported/GoogleSansCode-Italic.ttf-3b2534cd9a211f2ad1e178f5d2414850.fontdata"]
-
-[params]
-
-Rendering=null
-antialiasing=1
-generate_mipmaps=false
-disable_embedded_bitmaps=true
-multichannel_signed_distance_field=false
-msdf_pixel_range=8
-msdf_size=48
-allow_system_fallback=true
-force_autohinter=false
-modulate_color_glyphs=false
-hinting=1
-subpixel_positioning=4
-keep_rounding_remainders=true
-oversampling=0.0
-Fallbacks=null
-fallbacks=[]
-Compress=null
-compress=true
-preload=[]
-language_support={}
-script_support={}
-opentype_features={}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0fdb28206062cdf8664616d0cece5423689bf9727d512cca3f834070bd1ff560
+size 819

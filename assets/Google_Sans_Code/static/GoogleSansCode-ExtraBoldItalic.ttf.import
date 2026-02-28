@@ -1,36 +1,3 @@
-[remap]
-
-importer="font_data_dynamic"
-type="FontFile"
-uid="uid://pard4jy1u05v"
-path="res://.godot/imported/GoogleSansCode-ExtraBoldItalic.ttf-9101dd7fcc987ac105eb553240d45537.fontdata"
-
-[deps]
-
-source_file="res://assets/Google_Sans_Code/static/GoogleSansCode-ExtraBoldItalic.ttf"
-dest_files=["res://.godot/imported/GoogleSansCode-ExtraBoldItalic.ttf-9101dd7fcc987ac105eb553240d45537.fontdata"]
-
-[params]
-
-Rendering=null
-antialiasing=1
-generate_mipmaps=false
-disable_embedded_bitmaps=true
-multichannel_signed_distance_field=false
-msdf_pixel_range=8
-msdf_size=48
-allow_system_fallback=true
-force_autohinter=false
-modulate_color_glyphs=false
-hinting=1
-subpixel_positioning=4
-keep_rounding_remainders=true
-oversampling=0.0
-Fallbacks=null
-fallbacks=[]
-Compress=null
-compress=true
-preload=[]
-language_support={}
-script_support={}
-opentype_features={}
+version https://git-lfs.github.com/spec/v1
+oid sha256:1684e2fd89e3db4962b3102a15b21b1324eb3c77fd580489a6d8dab985a72bf1
+size 845

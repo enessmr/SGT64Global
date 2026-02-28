@@ -1,24 +1,3 @@
-[remap]
-
-importer="wav"
-type="AudioStreamWAV"
-uid="uid://cgkyhmfycvxfr"
-path="res://.godot/imported/sm64_coin.wav-7cb1d6a6337ea4672a39388b482461af.sample"
-
-[deps]
-
-source_file="res://sfx/sm64_coin.wav"
-dest_files=["res://.godot/imported/sm64_coin.wav-7cb1d6a6337ea4672a39388b482461af.sample"]
-
-[params]
-
-force/8_bit=false
-force/mono=false
-force/max_rate=false
-force/max_rate_hz=44100
-edit/trim=false
-edit/normalize=false
-edit/loop_mode=0
-edit/loop_begin=0
-edit/loop_end=-1
-compress/mode=2
+version https://git-lfs.github.com/spec/v1
+oid sha256:3a70d4a5d7aeffbc746441709cdc31f910ba401c1c646a96d6eb56c71f1723f9
+size 489

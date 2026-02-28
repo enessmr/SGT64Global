@@ -1,30 +1,3 @@
-[remap]
-
-importer="2d_array_texture"
-type="CompressedTexture2DArray"
-uid="uid://bqv1efox4n6pr"
-path.s3tc="res://.godot/imported/node_3d_shadow.png-a222a44694ee6a8a0b2dce9af199f7fc.s3tc.ctexarray"
-path.etc2="res://.godot/imported/node_3d_shadow.png-a222a44694ee6a8a0b2dce9af199f7fc.etc2.ctexarray"
-metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
-"vram_texture": true
-}
-
-[deps]
-
-source_file="res://bakedLM/node_3d_shadow.png"
-dest_files=["res://.godot/imported/node_3d_shadow.png-a222a44694ee6a8a0b2dce9af199f7fc.s3tc.ctexarray", "res://.godot/imported/node_3d_shadow.png-a222a44694ee6a8a0b2dce9af199f7fc.etc2.ctexarray"]
-
-[params]
-
-compress/mode=2
-compress/high_quality=false
-compress/lossy_quality=0.7
-compress/uastc_level=0
-compress/rdo_quality_loss=0.0
-compress/hdr_compression=1
-compress/channel_pack=1
-mipmaps/generate=false
-mipmaps/limit=-1
-slices/horizontal=1
-slices/vertical=1
+version https://git-lfs.github.com/spec/v1
+oid sha256:6f0928f6055b0798761f918363b37b6e847057eadedfd6635bc01c0e98b263da
+size 895

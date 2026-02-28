@@ -1,36 +1,3 @@
-[remap]
-
-importer="font_data_dynamic"
-type="FontFile"
-uid="uid://1mcvfbusfdxo"
-path="res://.godot/imported/Mario64.ttf-3cb6137cf9f9365fe4287c97e384ef27.fontdata"
-
-[deps]
-
-source_file="res://font/Mario64.ttf"
-dest_files=["res://.godot/imported/Mario64.ttf-3cb6137cf9f9365fe4287c97e384ef27.fontdata"]
-
-[params]
-
-Rendering=null
-antialiasing=1
-generate_mipmaps=false
-disable_embedded_bitmaps=true
-multichannel_signed_distance_field=false
-msdf_pixel_range=8
-msdf_size=48
-allow_system_fallback=true
-force_autohinter=false
-modulate_color_glyphs=false
-hinting=1
-subpixel_positioning=4
-keep_rounding_remainders=true
-oversampling=0.0
-Fallbacks=null
-fallbacks=[]
-Compress=null
-compress=true
-preload=[]
-language_support={}
-script_support={}
-opentype_features={}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bfdef324d2f84bfe50d06dcbaf5c93299110553af32848083f0cea68bf4d3520
+size 750
