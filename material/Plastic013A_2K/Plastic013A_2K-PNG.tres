@@ -1,16 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://jyr310dybq7s"]
-
-[ext_resource type="Texture2D" uid="uid://b28t8j3eqkc3r" path="res://material/Plastic013A_2K/Plastic013A_2K-PNG_Displacement.png" id="2_3jvfl"]
-[ext_resource type="Texture2D" uid="uid://dja8dsmm1s5rg" path="res://material/Plastic013A_2K/Plastic013A_2K-PNG_NormalGL.png" id="3_gjmsu"]
-[ext_resource type="Texture2D" uid="uid://nhcpwu05hp77" path="res://material/Plastic013A_2K/Plastic013A_2K-PNG_Roughness.png" id="4_baows"]
-[ext_resource type="Texture2D" uid="uid://dw7sspi4m6p8" path="res://material/Plastic013A_2K/Plastic013A_2K-PNG_Color.png" id="Color"]
-
-[resource]
-albedo_texture = ExtResource("Color")
-roughness_texture = ExtResource("4_baows")
-roughness_texture_channel = 4
-normal_enabled = true
-normal_texture = ExtResource("3_gjmsu")
-heightmap_enabled = true
-heightmap_texture = ExtResource("2_3jvfl")
-uv1_scale = Vector3(2, 2, 2)
+version https://git-lfs.github.com/spec/v1
+oid sha256:b9db043a8d8f93cb53b33b43c288a7288d4975f305134d607c67b2d1bff77e50
+size 915

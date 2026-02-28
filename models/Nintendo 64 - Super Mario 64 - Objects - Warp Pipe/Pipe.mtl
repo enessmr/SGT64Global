@@ -1,24 +1,3 @@
-# Blender MTL File: 'None'
-# Material Count: 2
-
-newmtl 6C0274DD_c.bmp
-Ns 0.000000
-Ka 1.000000 1.000000 1.000000
-Kd 0.996094 0.996094 0.996094
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 1.000000
-illum 1
-map_Kd 6C0274DD_c.png
-
-newmtl 76A02A69_c.bmp
-Ns 0.000000
-Ka 1.000000 1.000000 1.000000
-Kd 0.246094 0.246094 0.246094
-Ks 0.000000 0.000000 0.000000
-Ke 0.000000 0.000000 0.000000
-Ni 1.000000
-d 1.000000
-illum 1
-map_Kd 76A02A69_c.png
+version https://git-lfs.github.com/spec/v1
+oid sha256:bad96633bf363c8278d9094614c7478c306b6ee4f0853cebfeac9bab394f70bf
+size 463

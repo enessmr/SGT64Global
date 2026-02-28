@@ -1,17 +1,3 @@
-﻿Name: DOUBLE BED 3
-Type: model
-Format: 3Ds Max 2019
-Export: OBJ
-Render: Corona (9)
-Polys: 448744
-Verts: 448992
-Matclasses: CoronaLegacyMtl
-Units: Millimeters
-Dimension: 2978.35 x 1975.3 x 745.32
-Preset: 3DDD/3DSKY
-Date: 2025.11.22
-Tags: 
-Packinfo: Packed with Model Packer by https://3dground.net/
-Packver: 1.8.9
-Description:
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:d42295c7cfa9dc0c7f1ee9d5d25505e98545a025475e64f67b868a0213ee4626
+size 346

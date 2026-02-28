@@ -1,21 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://bl60pdx3e5kgd"]
-
-[ext_resource type="Texture2D" uid="uid://b47vdmmses2s1" path="res://material/Grass005_2K/Grass005_2K-PNG_AmbientOcclusion.png" id="AmbientOcclusion"]
-[ext_resource type="Texture2D" uid="uid://b1k12cov7f7gt" path="res://material/Grass005_2K/Grass005_2K-PNG_Color.png" id="Color"]
-[ext_resource type="Texture2D" uid="uid://bjtt1x5cyin76" path="res://material/Grass005_2K/Grass005_2K-PNG_Displacement.png" id="Displacement"]
-[ext_resource type="Texture2D" uid="uid://bvqd7a2q10bu4" path="res://material/Grass005_2K/Grass005_2K-PNG_NormalGL.png" id="NormalGL"]
-[ext_resource type="Texture2D" uid="uid://di57yyw2ks0fh" path="res://material/Grass005_2K/Grass005_2K-PNG_Roughness.png" id="Roughness"]
-
-[resource]
-albedo_texture = ExtResource("Color")
-roughness_texture = ExtResource("Roughness")
-roughness_texture_channel = 4
-normal_enabled = true
-normal_texture = ExtResource("NormalGL")
-ao_enabled = true
-ao_texture = ExtResource("AmbientOcclusion")
-ao_texture_channel = 4
-heightmap_enabled = true
-heightmap_scale = 1.0
-heightmap_texture = ExtResource("Displacement")
-uv1_scale = Vector3(2500, 2500, 2500)
+version https://git-lfs.github.com/spec/v1
+oid sha256:e82c261563d513d7a39be1108ceb6bb10333d6023848799718282e15a38a8622
+size 1178

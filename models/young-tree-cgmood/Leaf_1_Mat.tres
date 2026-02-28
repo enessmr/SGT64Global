@@ -1,8 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://vorfalkr1ed3"]
-
-[resource]
-resource_name = "Leaf_1_Mat"
-vertex_color_use_as_albedo = true
-albedo_color = Color(0.37750846, 0.5341863, 0.13180381, 1)
-emission_enabled = true
-emission_energy_multiplier = 0.0
+version https://git-lfs.github.com/spec/v1
+oid sha256:e6dd237c591a02a7168b413b1500e7be53a4cb4279b42c1e4e04a5d6be1ca15b
+size 265

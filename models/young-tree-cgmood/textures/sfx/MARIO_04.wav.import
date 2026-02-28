@@ -1,24 +1,3 @@
-[remap]
-
-importer="wav"
-type="AudioStreamWAV"
-uid="uid://de5kdgwjjh5cq"
-path="res://.godot/imported/MARIO_04.wav-fff56d503550cfce83b83cbc38dbd9d6.sample"
-
-[deps]
-
-source_file="res://models/young-tree-cgmood/textures/sfx/MARIO_04.wav"
-dest_files=["res://.godot/imported/MARIO_04.wav-fff56d503550cfce83b83cbc38dbd9d6.sample"]
-
-[params]
-
-force/8_bit=false
-force/mono=false
-force/max_rate=false
-force/max_rate_hz=44100
-edit/trim=false
-edit/normalize=false
-edit/loop_mode=0
-edit/loop_begin=0
-edit/loop_end=-1
-compress/mode=2
+version https://git-lfs.github.com/spec/v1
+oid sha256:3c2d20c5dd1f2378922dea8377b0496299ca4513591d90b157fabc542af10b11
+size 520

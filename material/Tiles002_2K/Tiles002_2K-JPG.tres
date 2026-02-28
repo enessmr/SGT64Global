@@ -1,17 +1,3 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://8x3ps0udfty0"]
-
-[ext_resource type="Texture2D" uid="uid://cqm5q3ioewlos" path="res://material/Tiles002_2K/Tiles002_2K-JPG_Color.jpg" id="Color"]
-[ext_resource type="Texture2D" uid="uid://dyi0for4fnmtq" path="res://material/Tiles002_2K/Tiles002_2K-JPG_Displacement.jpg" id="Displacement"]
-[ext_resource type="Texture2D" uid="uid://bu32v4ihqahcw" path="res://material/Tiles002_2K/Tiles002_2K-JPG_NormalGL.jpg" id="NormalGL"]
-[ext_resource type="Texture2D" uid="uid://b4kr10xcbh2dl" path="res://material/Tiles002_2K/Tiles002_2K-JPG_Roughness.jpg" id="Roughness"]
-
-[resource]
-albedo_texture = ExtResource("Color")
-roughness_texture = ExtResource("Roughness")
-roughness_texture_channel = 4
-normal_enabled = true
-normal_texture = ExtResource("NormalGL")
-heightmap_enabled = true
-heightmap_scale = 1.0
-heightmap_texture = ExtResource("Displacement")
-uv1_scale = Vector3(50, 30, 50)
+version https://git-lfs.github.com/spec/v1
+oid sha256:57e50c9ab274aefe1fcebeacc45e5d9024e70921d93b2cb741443f2733edba4d
+size 934

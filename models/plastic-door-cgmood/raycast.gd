@@ -1,8 +1,3 @@
-extends RayCast3D
-func _process(delta):
-	if is_colliding():
-		var hitObj = get_collider()
-		if hitObj.has_method("interact") && Input.is_action_just_pressed("player_interact"):
-			# RayCast3D -> Camera3D -> PlayerMesh -> Player (RigidBody3D)
-			var player = get_parent().get_parent().get_parent()
-			hitObj.interact(player)
+version https://git-lfs.github.com/spec/v1
+oid sha256:f0fac5e314d30ca70a4747f6dbba61cfb12ef0c1205629f385525dc2f4f727f5
+size 324
